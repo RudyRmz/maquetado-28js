@@ -1,0 +1,36 @@
+*{
+    font-size: 22px;
+    color: black;
+}
+
+h1 {
+    color:purple; 
+    font-size: 32px;
+}
+
+p {
+    color:blue;
+}
+
+.paragraph{
+    color: brown;
+}
+
+.custom_color{
+    color: blueviolet;
+}
+
+#login-button{
+    display: inline-block;
+    width: 180px;
+    height: 90px;
+}
+
+.example_box{
+    width: 110px;
+    height: 110px;
+    background-color: aqua;
+    border: 12px dotted;
+    border-color: red green blue brown;
+    
+}

@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main__title{
+    color: hotpink;
+}
+
+.position__container > .position__box{
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    margin: 10px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.position__box--green{
+    background-color: green;
+    position: static;
+}
+
+.position__box--blue{
+    background-color: blue;
+    position: relative;
+    top: 40px;
+    left: 40px;
+    /* right: ;
+    bottom: ; */
+}
+
+.position__box--red{
+    background-color: red;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.position__box--pink{
+    background-color: hotpink;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+}
+
+.position__box--orange{
+    background-color: orange;
+    position: sticky;
+    top: 0;
+}
+
+.homepage__title{
+    z-index: 1;
+    position: absolute;
+}
+
+.homepage__image{
+    width: 100%;
+}
+
+.animation__container, .animation__container--2{
+    margin: 40px;
+}
+
+.animation__container > .animation__button{
+    width: 160px;
+    height: 45px;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: blue;
+    color: #fff;
+    font-weight: 700;
+}
+
+.animation__button--2{
+    width: 160px;
+    height: 45px;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: purple;
+    color: #fff;
+    font-weight: 700;
+}
+
+.animation__button:hover{
+    cursor: pointer;
+    animation-name: rainbow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.animation__button--2:hover{
+    transform: translateX(20px) translateY(15px);
+}
+
+.main__title--animation{
+    animation-name: title__animation;
+    animation-duration: 5s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow{
+    0%{
+        background-color: blue;
+        transform: rotate(0deg);
+    }
+
+    25%{
+        background-color: red;
+        transform: rotate(90deg);
+    }
+
+    50%{
+        background-color: orange;
+        transform: rotate(180deg);
+    }
+
+    75%{
+        background-color: green;
+        transform: rotate(270deg);
+    }
+
+    100%{
+        background-color: purple;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes title__animation {
+    0%{
+        color: green;
+    }
+
+    25%{
+        color: hotpink;
+    }
+
+    50%{
+        color: blue;
+    }
+
+    75%{
+        color: yellowgreen;
+    }
+
+    100%{
+        color: aqua;
+    }
+}
