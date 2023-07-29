@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header__container{
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+}
+
+.nav-menu__list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-main__menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu__item{
+    list-style: none;
+}
+
+.nav__button-item{
+    list-style: none;
+}
+
+.nav-menu__item--large{
+    width: 800px;
+}
+
+
+
